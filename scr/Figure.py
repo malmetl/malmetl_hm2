@@ -10,7 +10,6 @@ class Figure:
     def get_perimeter(self):
         raise ValueError("This method should be overridden by subclasses")
 
-    @abstractmethod
     def add_area(self, figure):
         if not isinstance(figure, Figure):
             raise ValueError("Argument is not a geometric figure")
