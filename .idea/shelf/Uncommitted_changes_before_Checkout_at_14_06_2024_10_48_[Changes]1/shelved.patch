@@ -1,0 +1,115 @@
+Index: scr/Figure.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from abc import ABC, abstractmethod\r\n\r\n\r\nclass Figure:\r\n    @abstractmethod\r\n    def get_area(self):\r\n        raise ValueError(\"This method should be overridden by subclasses\")\r\n\r\n    @abstractmethod\r\n    def get_perimeter(self):\r\n        raise ValueError(\"This method should be overridden by subclasses\")\r\n\r\n    @abstractmethod\r\n    def add_area(self, figure):\r\n        if not isinstance(figure, Figure):\r\n            raise ValueError(\"Argument is not a geometric figure\")\r\n        return self.get_area() + figure.get_area()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/scr/Figure.py b/scr/Figure.py
+--- a/scr/Figure.py	
++++ b/scr/Figure.py	
+@@ -10,7 +10,6 @@
+     def get_perimeter(self):
+         raise ValueError("This method should be overridden by subclasses")
+ 
+-    @abstractmethod
+     def add_area(self, figure):
+         if not isinstance(figure, Figure):
+             raise ValueError("Argument is not a geometric figure")
+Index: scr/Rectangle.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from Figure import Figure\r\nfrom abc import ABC, abstractmethod\r\n\r\n\r\nclass Rectangle(Figure):\r\n    @abstractmethod\r\n    def __init__(self, side_a, side_b):\r\n        if side_a <= 0 or side_b <= 0:\r\n            raise ValueError(' side_a and side_b must be positive integers')\r\n        self.side_a = side_a\r\n        self.side_b = side_b\r\n\r\n    @property\r\n    def get_area(self):\r\n        return self.side_a * self.side_b\r\n\r\n    @property\r\n    def get_perimeter(self):\r\n        return 2 * (self.side_a + self.side_b)\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/scr/Rectangle.py b/scr/Rectangle.py
+--- a/scr/Rectangle.py	
++++ b/scr/Rectangle.py	
+@@ -1,12 +1,11 @@
+ from Figure import Figure
+-from abc import ABC, abstractmethod
+ 
+ 
+ class Rectangle(Figure):
+-    @abstractmethod
++
+     def __init__(self, side_a, side_b):
+         if side_a <= 0 or side_b <= 0:
+-            raise ValueError(' side_a and side_b must be positive integers')
++            raise ValueError(' side_a and side_b must be positive integer')
+         self.side_a = side_a
+         self.side_b = side_b
+ 
+@@ -17,4 +16,3 @@
+     @property
+     def get_perimeter(self):
+         return 2 * (self.side_a + self.side_b)
+-
+Index: scr/Cirle.py
+===================================================================
+diff --git a/scr/Cirle.py b/scr/Cirle.py
+deleted file mode 100644
+--- a/scr/Cirle.py	
++++ /dev/null	
+@@ -1,22 +0,0 @@
+-from Figure import Figure
+-import math
+-from abc import ABC, abstractmethod
+-
+-
+-class Cirle(Figure):
+-    @abstractmethod
+-    def __init__(self, radius, pi):
+-        self.radius = radius
+-        self.pi = pi
+-
+-    @property
+-    def get_area(self):
+-        return math.pi * self.radius ** 2
+-
+-    @property
+-    def get_perimeter(self):
+-        return 2 * self.pi * self.radius
+-
+-
+-
+-
+Index: scr/triangle.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/scr/triangle.py b/scr/triangle.py
+deleted file mode 100644
+--- a/scr/triangle.py	
++++ /dev/null	
+@@ -1,28 +0,0 @@
+-from abc import ABC, abstractmethod
+-from Figure import Figure
+-import math
+-
+-
+-@abstractmethod
+-class Triangle(Figure, ABC):
+-    def __init__(self, side1, side2, side3):
+-        self.side1 = side1
+-        self.side2 = side2
+-        self.side3 = side3
+-        if not self.is_valid_triangle():
+-            raise ValueError("The sides do not form a valid triangle")
+-
+-    def is_valid_triangle(self):
+-        return (self.side1 + self.side2 > self.side3 and
+-                self.side1 + self.side3 > self.side2 and
+-                self.side2 + self.side3 > self.side1)
+-
+-    def get_area(self):
+-        s = (self.side1 + self.side2 + self.side3) / 2
+-        return math.sqrt(s * (s - self.side1) * (s - self.side2) * (s - self.side3))
+-
+-    def get_perimeter(self):
+-        return self.side1 + self.side2 + self.side3
+-
+-
+-
