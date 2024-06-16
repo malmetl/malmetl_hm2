@@ -10,7 +10,6 @@ class Figure(ABC):
     def get_perimeter(self):
         pass
 
-    @abstractmethod
     def add_area(self, figure):
         if not isinstance(figure, Figure):
             raise ValueError("Argument is not a geometric figure")

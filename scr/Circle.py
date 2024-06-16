@@ -1,10 +1,11 @@
+from abc import ABC
+
 from Figure import Figure
 import math
-from abc import ABC, abstractmethod
 
 
-class Cirle(Figure):
-    @abstractmethod
+class Cirсle(Figure, ABC):
+
     def __init__(self, radius, pi):
         self.radius = radius
         self.pi = pi
@@ -16,7 +17,3 @@ class Cirle(Figure):
     @property
     def get_perimeter(self):
         return 2 * self.pi * self.radius
-
-
-
-

@@ -3,7 +3,6 @@ from Figure import Figure
 import math
 
 
-@abstractmethod
 class Triangle(Figure, ABC):
     def __init__(self, side1, side2, side3):
         self.side1 = side1
@@ -17,12 +16,11 @@ class Triangle(Figure, ABC):
                 self.side1 + self.side3 > self.side2 and
                 self.side2 + self.side3 > self.side1)
 
+    @property
     def get_area(self):
         s = (self.side1 + self.side2 + self.side3) / 2
         return math.sqrt(s * (s - self.side1) * (s - self.side2) * (s - self.side3))
 
+    @property
     def get_perimeter(self):
         return self.side1 + self.side2 + self.side3
-
-
-
