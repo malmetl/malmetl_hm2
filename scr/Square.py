@@ -1,4 +1,4 @@
-from Rectangle import Rectangle
+from scr.Rectangle import Rectangle
 from abc import ABC, abstractmethod
 
 

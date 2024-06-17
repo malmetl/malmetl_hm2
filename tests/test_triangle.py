@@ -4,7 +4,7 @@ import math
 
 
 def test_triangle_area(triangle):
-    if isinstance(triangle, Triangle):
+    if isinstance(triangle, triangle):
         s = (triangle.side1 + triangle.side2 + triangle.side3) / 2
         assert math.isclose(triangle.get_area,
                             math.sqrt(s * (s - triangle.side1) * (s - triangle.side2) * (s - triangle.side3)),

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Figure import Figure
+from scr.Figure import Figure
 import math
 
 
