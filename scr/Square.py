@@ -8,4 +8,3 @@ class Square(Rectangle):
         if side_a <= 0:
             raise ValueError('Square side_a must be positive integers')
         super().__init__(side_a, side_a)
-
