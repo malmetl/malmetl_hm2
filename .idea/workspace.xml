@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff8f5323-f624-4dfb-a03a-38a43846c2ba" name="Changes" comment="first_steps">
+    <list default="true" id="ff8f5323-f624-4dfb-a03a-38a43846c2ba" name="Changes" comment="homework3">
+      <change beforePath="$PROJECT_DIR$/.idea/malmetl_hm2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/malmetl_hm2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Square.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr/Triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_triangle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +34,28 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "malmetl"
+  }
+}]]></component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOMI_Ses5ynjoM",
+        "number": 3
+      },
+      "lastSeen": 1718648259660
+    }
+  ]
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/malmetl/malmetl_hm2.git",
+    "accountId": "768a3e93-cc03-4aed-9907-038a609b27b3"
+  },
   "recentNewPullRequestHead": {
     "server": {
       "useHttp": false,
@@ -50,21 +78,137 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_example.test_integer.executor": "Run",
+    "Python tests.Python tests for test_example.test_negative_value.executor": "Run",
+    "Python tests.Python tests for test_example.test_rectangle_area_positive.executor": "Run",
+    "Python tests.Python tests for test_squere.test_squere.executor": "Run",
+    "Python tests.Python tests for test_triangle.test_invalid_triangle.executor": "Run",
+    "Python tests.Python tests for test_triangle.test_triangle_area.executor": "Run",
+    "Python tests.Python tests for test_triangle.test_triangle_perimeter.executor": "Run",
     "Python.Cirle.executor": "Run",
     "Python.Figure.executor": "Run",
     "Python.Rectangle.executor": "Run",
     "Python.Square.executor": "Run",
     "Python.triangle.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#1 on hm__mametl2",
+    "git-widget-placeholder": "#3 on homework3",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_triangle.test_triangle_perimeter">
+    <configuration name="Python tests for test_squere.test_squere" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_squere.test_squere&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_triangle.test_invalid_triangle" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_triangle.test_invalid_triangle&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_triangle.test_triangle_area" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_triangle.test_triangle_area&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_triangle.test_triangle_perimeter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_triangle.test_triangle_perimeter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_rectangle" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rectangle&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_rectangle.test_rectangle_area_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="malmetl_hm2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rectangle.test_rectangle_area_positive&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_triangle.test_triangle_perimeter" />
+        <item itemvalue="Python tests.Python tests for test_triangle.test_triangle_area" />
+        <item itemvalue="Python tests.Python tests for test_triangle.test_invalid_triangle" />
+        <item itemvalue="Python tests.Python tests for test_squere.test_squere" />
+        <item itemvalue="Python tests.Python tests for tests.test_rectangle.test_rectangle_area_positive" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,6 +226,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718280291356</updated>
       <workItem from="1718280292691" duration="11637000" />
+      <workItem from="1718557462889" duration="9447000" />
     </task>
     <task id="LOCAL-00001" summary="first_steps">
       <option name="closed" value="true" />
@@ -99,21 +244,62 @@
       <option name="project" value="LOCAL" />
       <updated>1718351515615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="homework3">
+      <option name="closed" value="true" />
+      <created>1718563716704</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718563716704</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework3">
+      <option name="closed" value="true" />
+      <created>1718648510958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718648510958</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first_steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="first_steps" />
+    <MESSAGE value="homework3" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/malmetl_hm2$Cirle.coverage" NAME="Cirle Coverage Results" MODIFIED="1718291421063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
-    <SUITE FILE_PATH="coverage/malmetl_hm2$Rectangle.coverage" NAME="Rectangle Coverage Results" MODIFIED="1718291929894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
-    <SUITE FILE_PATH="coverage/malmetl_hm2$Figure.coverage" NAME="Figure Coverage Results" MODIFIED="1718290483442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
     <SUITE FILE_PATH="coverage/malmetl_hm2$triangle.coverage" NAME="triangle Coverage Results" MODIFIED="1718292122785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
     <SUITE FILE_PATH="coverage/malmetl_hm2$Square.coverage" NAME="Square Coverage Results" MODIFIED="1718292132255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
+    <SUITE FILE_PATH="coverage/malmetl_hm2$Rectangle.coverage" NAME="Rectangle Coverage Results" MODIFIED="1718291929894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
+    <SUITE FILE_PATH="coverage/malmetl_hm2$Figure.coverage" NAME="Figure Coverage Results" MODIFIED="1718290483442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
+    <SUITE FILE_PATH="coverage/malmetl_hm2$Cirle.coverage" NAME="Cirle Coverage Results" MODIFIED="1718291421063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scr" />
+    <SUITE FILE_PATH="coverage/malmetl_hm2$.coverage" NAME=" Coverage Results" MODIFIED="1718649150648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
