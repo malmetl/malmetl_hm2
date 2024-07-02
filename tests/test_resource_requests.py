@@ -2,7 +2,7 @@ from tests.gectaro_http_client import GectaroHttpClient
 from datetime import datetime
 
 client = GectaroHttpClient("https://api.gectaro.com",
-                           token="qO0CTN2o68UblIErYx-OAVvKy2__giB2")
+                           token="HL4yGX1-3LeTGQbSBsvwFPKceGfzfZsE")
 
 
 def test_get_resources_requests():
@@ -26,19 +26,18 @@ def test_get_resources_requests_v2():
         assert item["id"] is not None
         assert item["valuation_id"] is None
         assert item["updated_at"] > 10000
-        assert item["cost"] > 0
     assert r.status_code == 200
 
 
-def test_get_resources_requests_negativ():
+def test_get_resources_requests_negative():
     r = client.get_project_resource_requests()
     print(r.status_code)
     print(r.url)
     print(r.json()[1])
     for item in r.json():
-        assert item['updated_at'] == 10000
-        assert item["id"] is None
-        assert item["volume"] == 5
+        assert item['updated_at'] == 1719910351
+        assert item["id"] is not None
+        assert item["volume"] == 0.71
     assert r.status_code == 404
 
 

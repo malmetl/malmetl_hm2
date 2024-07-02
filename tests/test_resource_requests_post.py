@@ -4,14 +4,14 @@ from tests.gectaro_http_client import GectaroHttpClient
 from datetime import datetime, timedelta
 
 client = GectaroHttpClient("https://api.gectaro.com",
-                           token="qO0CTN2o68UblIErYx-OAVvKy2__giB2")
+                           token="HL4yGX1-3LeTGQbSBsvwFPKceGfzfZsE")
 
 
 def test_post_resource_requests():
     data = {
         "name": "test_name",
-        "needed_at": datetime.now().timestamp(),
-        "project_id": 85531,
+        "needed_at": int(datetime.now().timestamp()),
+        "project_id": 86122,
         "type": 1,
         "volume": 5
     }
@@ -39,7 +39,7 @@ def test_post_resource_requests_v2():
     data = {
         "name": "test_name",
         "needed_at": datetime.now().timestamp(),
-        "project_id": 85531,
+        "project_id": 86122,
         "type": 1,
         "volume": 5
     }
@@ -63,8 +63,6 @@ def test_post_resource_requests_v2():
     assert response.status_code == 201
 
 
-
-
 def test_post_resource_requests_negative():
     data = {
         "name": "test_name",
@@ -80,7 +78,7 @@ def test_post_resource_requests_negative():
     data = {"project_tasks_resource_id": resource_id,
             "volume": 10,
             "cost": 5,
-            "needed_at": datetime.now().timestamp(),
+            "needed_at": int(datetime.now().timestamp()),
             "is_over_budget": 1}
     response = client.post_project_resource_requests(data=data)
     print(f'Status code: {response.status_code}')

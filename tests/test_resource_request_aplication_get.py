@@ -2,14 +2,14 @@ from tests.gectaro_http_client import GectaroHttpClient
 from datetime import datetime
 
 client = GectaroHttpClient("https://api.gectaro.com",
-                           token="qO0CTN2o68UblIErYx-OAVvKy2__giB2")
+                           token="HL4yGX1-3LeTGQbSBsvwFPKceGfzfZsE")
 
 
 def test_get_resouce_aplication():
     data = {
         "name": "test_name",
         "needed_at": int(datetime.now().timestamp()),
-        "project_id": 85531,
+        "project_id": 86122,
         "type": 1,
         "volume": 5
     }
@@ -37,7 +37,7 @@ def test_get_resouce_aplication_v2():
     data = {
         "name": "test_name",
         "needed_at": int(datetime.now().timestamp()),
-        "project_id": 85531,
+        "project_id": 86122,
         "type": 1,
         "volume": 5
     }
@@ -60,14 +60,14 @@ def test_get_resouce_aplication_v2():
     assert r.json() is not None
     assert r.json().get('batch_number') is None
     assert r.json().get('valuation_id') is None
-    assert r.json().get('user_id') == 22998
+    assert r.json().get('user_id') == 23082
 
 
 def test_get_resouce_aplication_negative():
     data = {
         "name": "test_name",
         "needed_at": datetime.now().timestamp(),
-        "project_id": 85531,
+        "project_id": 86122,
         "type": 1,
         "volume": "type"
     }
@@ -98,7 +98,7 @@ def test_get_resouce_aplication_negative_v2():
     data = {
         "name": "test_name",
         "needed_at": int(datetime.now().timestamp()),
-        "project_id": 85531,
+        "project_id": 86122,
         "type": 1,
         "volume": 5
     }

@@ -2,7 +2,7 @@ from tests.gectaro_http_client import GectaroHttpClient
 from datetime import datetime
 
 client = GectaroHttpClient("https://api.gectaro.com",
-                           token="qO0CTN2o68UblIErYx-OAVvKy2__giB2")
+                           token="HL4yGX1-3LeTGQbSBsvwFPKceGfzfZsE")
 
 
 def test_get_resources_requests():

@@ -3,7 +3,7 @@ import requests
 
 
 class GectaroHttpClient:
-    def __init__(self, base_url, token, project_id='85531', company='19024'):
+    def __init__(self, base_url, token, project_id='86122', company='19082'):
         self.base_url = base_url
         self.token = token
         self.session = requests.Session()
