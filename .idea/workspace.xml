@@ -135,7 +135,7 @@
       <recent name="C:\Users\Fosters PC\PycharmProjects\malmetl_hm2v5\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative_v2">
+  <component name="RunManager" selected="Python tests.Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative">
     <configuration name="Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="malmetl_hm2" />
       <option name="ENV_FILES" value="" />
@@ -218,8 +218,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative_v2" />
         <item itemvalue="Python tests.Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative" />
+        <item itemvalue="Python tests.Python tests for test_resource_request_aplication_get.test_get_resouce_aplication_negative_v2" />
         <item itemvalue="Python tests.Python tests for test_resourse_requests_get_company.test_get_resources_requests_negative_v2" />
         <item itemvalue="Python tests.Python tests for test_resourse_requests_get_company.test_get_resources_requests_negative" />
         <item itemvalue="Python tests.Python tests for test_resourse_requests_get_company.test_get_resources_requests_v2" />
