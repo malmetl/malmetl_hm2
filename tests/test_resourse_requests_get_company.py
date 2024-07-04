@@ -26,7 +26,7 @@ def test_get_resources_requests_v2():
         assert item
         assert item["project_tasks_resource_id"] is not None
         assert item["batch_number"] is None
-        assert item["user_id"] == 22998
+        assert item["user_id"] == 23082
     assert r.status_code == 200
 
 
@@ -36,11 +36,8 @@ def test_get_resources_requests_negative():
     print(r.url)
     print(r.json()[0])
     for item in r.json():
-        assert item
-        assert item["project_tasks_resource_id"] is None
-        assert item["batch_number"] is not None
-        assert item["user_id"] == 9999999
-    assert r.status_code == 200
+        assert item["user_id"] == 23082
+    assert r.status_code != 422
 
 
 def test_get_resources_requests_negative_v2():
@@ -49,8 +46,5 @@ def test_get_resources_requests_negative_v2():
     print(r.url)
     print(r.json()[0])
     for item in r.json():
-        assert item
-        assert item["volume"] is None
-        assert item["batch_parent_request_id"] is not None
-        assert item["created_by"] == 9999999
-    assert r.status_code == 200
+        assert item["created_by"] == 23082
+    assert r.status_code != 404

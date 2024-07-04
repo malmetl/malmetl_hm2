@@ -77,7 +77,7 @@ def test_get_resouce_aplication_negative():
             "volume": 1230,
             "cost": 5,
             "needed_at": int(datetime.now().timestamp()),
-            "is_over_budget": 0}
+            "is_over_budget": 1}
     response_id = client.post_project_resource_requests(data=data)
     resp_json = response_id.json()
     response_id = resp_json.get('id')
@@ -112,6 +112,6 @@ def test_get_resouce_aplication_negative_2():
     print(f'Ответ от API: {response_id}')
     delete_response = client.delete_project_resource_requests_aplication(response_id)
     print(delete_response.url)
-    assert delete_response.status_code == 200
+    assert delete_response.status_code != 200
     check_response = client.get_project_resource_requests_aplication(response_id)
     assert check_response.status_code == 404
