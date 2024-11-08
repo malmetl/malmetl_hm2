@@ -1,6 +1,6 @@
 from abc import ABC
 
-from Figure import Figure
+from scr.Figure import Figure
 import math
 
 

@@ -1,14 +1,14 @@
 from abc import ABC, abstractmethod
 
 
-class Figure:
+class Figure(ABC):
     @abstractmethod
     def get_area(self):
-        raise ValueError("This method should be overridden by subclasses")
+        pass
 
     @abstractmethod
     def get_perimeter(self):
-        raise ValueError("This method should be overridden by subclasses")
+        pass
 
     def add_area(self, figure):
         if not isinstance(figure, Figure):
