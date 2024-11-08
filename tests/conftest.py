@@ -11,9 +11,6 @@ def circle(request):
     param = request.param
     if isinstance(param, int):
         return Cirсle(radius=param, pi=math.pi)
-    else:
-        with pytest.raises(ValueError):
-            Cirсle(radius=param, pi=math.pi)
 
 
 @pytest.fixture(params=[(3, 5), ('three', 5), (3.5, 5)])

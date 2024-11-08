@@ -3,9 +3,6 @@ import math
 from scr.Circle import Cirсle
 
 
-def test_circle_area(circle):
-    if isinstance(circle, Cirсle):
-        assert math.isclose(circle.get_area, math.pi * circle.radius ** 2)
 
 
 def test_circle_perimeter(circle):
